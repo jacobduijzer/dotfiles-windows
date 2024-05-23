@@ -67,10 +67,11 @@ bar:
       default_workspace_background: "transparent"
 
   components_right:
-    - type: "binding mode"
-      background: "#ffffff33"
-      margin: "0 4px 0 0"
-      padding: "0 8px"
+    - type: "volume"
+      label_low: "󰕿 {volume_level}% "
+      label_medium: "󰖀 {volume_level}% "
+      label_high: "󰕾 {volume_level}% "
+      label_mute: "󰖁 {volume_level}% "
     - type: "battery"
       label_draining: "󱟞 {battery_level}% remaining"
       label_power_saver: "󱃌 {battery_level}% (power saver)"
