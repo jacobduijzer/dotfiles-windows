@@ -1,2 +1,4 @@
-LWin::Alt
+LWin::RControl
+RAlt::LWin
+Capslock::Esc
 

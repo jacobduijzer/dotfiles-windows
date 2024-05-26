@@ -127,7 +127,6 @@ window_rules:
   - command: "move to workspace 10"
     match_process_name: "ms-teams"
 
-
 binding_modes:
   - name: "resize"
     keybindings:
@@ -147,138 +146,141 @@ binding_modes:
 keybindings:
   # Shift focus in a given direction.
   - command: "focus left"
-    bindings: ["Alt+H", "Alt+Left"]
+    bindings: ["RControlKey+H", "RControlKey+Left"]
   - command: "focus right"
-    bindings: ["Alt+L", "Alt+Right"]
+    bindings: ["RControlKey+L", "RControlKey+Right"]
   - command: "focus up"
-    bindings: ["Alt+K", "Alt+Up"]
+    bindings: ["RControlKey+K", "RControlKey+Up"]
   - command: "focus down"
-    bindings: ["Alt+J", "Alt+Down"]
+    bindings: ["RControlKey+J", "RControlKey+Down"]
 
   # Move focused window in a given direction.
   - command: "move left"
-    bindings: ["Alt+Shift+H", "Alt+Shift+Left"]
+    bindings: ["RControlKey+Shift+H", "RControlKey+Shift+Left"]
   - command: "move right"
-    bindings: ["Alt+Shift+L", "Alt+Shift+Right"]
+    bindings: ["RControlKey+Shift+L", "RControlKey+Shift+Right"]
   - command: "move up"
-    bindings: ["Alt+Shift+K", "Alt+Shift+Up"]
+    bindings: ["RControlKey+Shift+K", "RControlKey+Shift+Up"]
   - command: "move down"
-    bindings: ["Alt+Shift+J", "Alt+Shift+Down"]
+    bindings: ["RControlKey+Shift+J", "RControlKey+Shift+Down"]
 
   # Resize focused window by a percentage or pixel amount.
   - command: "resize width -2%"
-    binding: "Alt+U"
+    binding: "RControlKey+U"
   - command: "resize width +2%"
-    binding: "Alt+P"
+    binding: "RControlKey+P"
   - command: "resize height +2%"
-    binding: "Alt+O"
+    binding: "RControlKey+O"
   - command: "resize height -2%"
-    binding: "Alt+I"
+    binding: "RControlKey+I"
 
   # As an alternative to the resize keybindings above, resize mode enables resizing via
   # HJKL or arrow keys. The binding mode is defined above with the name "resize".
   - command: "binding mode resize"
-    binding: "Alt+R"
+    binding: "RControlKey+R"
 
   # Change tiling direction. This determines where new tiling windows will be inserted.
   - command: "tiling direction toggle"
-    binding: "Alt+V"
+    binding: "RControlKey+V"
 
   # Change focus between floating / tiling windows.
   - command: "focus mode toggle"
-    binding: "Alt+Space"
+    binding: "RControlKey+Space"
 
   # Change the focused window to be floating / tiling.
   - command: "toggle floating"
-    binding: "Alt+Shift+Space"
+    binding: "RControlKey+Shift+Space"
 
   # Change the focused window to be maximized / unmaximized.
   - command: "toggle maximized"
-    binding: "Alt+X"
+    binding: "RControlKey+X"
 
   # Minimize focused window.
   - command: "set minimized"
-    binding: "Alt+M"
+    binding: "RControlKey+M"
 
   # Close focused window.
   - command: "close"
-    binding: "Alt+Shift+Q"
+    binding: "RControlKey+Shift+Q"
 
   # Kill GlazeWM process safely.
   - command: "exit wm"
-    binding: "Alt+Shift+E"
+    binding: "RControlKey+Shift+E"
 
   # Re-evaluate configuration file.
   - command: "reload config"
-    binding: "Alt+Shift+R"
+    binding: "RControlKey+Shift+R"
 
   # Launch CMD terminal (alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
-  # to start Windows Terminal and Git Bash respectively.
+  # to start RControlKeydows Terminal and Git Bash respectively.
   - command: "exec cmd"
-    binding: "Alt+Enter"
+    binding: "RControlKey+Enter"
+
+  # TODO: Find out if this is even possible with windows workspaces
+  - command: "exec C:/Users/Jacob/scoop/apps/vivaldi/current/Application/vivaldi.exe"
+    binding: "RControlKey+Shift+Enter"
 
   # Focus the workspace that last had focus.
   - command: "focus workspace recent"
-    binding: "Alt+Y"
+    binding: "RControlKey+Y"
 
   # Focus the next/previous workspace defined in `workspaces` config.
   - command: "focus workspace next"
-    binding: "Alt+T"
+    binding: "RControlKey+T"
   - command: "focus workspace prev"
-    binding: "Alt+Shift+T"
+    binding: "RControlKey+Shift+T"
 
   # Change focus to a workspace defined in `workspaces` config.
   - command: "focus workspace 1"
-    binding: "Alt+1"
+    binding: "RControlKey+1"
   - command: "focus workspace 2"
-    binding: "Alt+2"
+    binding: "RControlKey+2"
   - command: "focus workspace 3"
-    binding: "Alt+3"
+    binding: "RControlKey+3"
   - command: "focus workspace 4"
-    binding: "Alt+4"
+    binding: "RControlKey+4"
   - command: "focus workspace 5"
-    binding: "Alt+5"
+    binding: "RControlKey+5"
   - command: "focus workspace 6"
-    binding: "Alt+6"
+    binding: "RControlKey+6"
   - command: "focus workspace 7"
-    binding: "Alt+7"
+    binding: "RControlKey+7"
   - command: "focus workspace 8"
-    binding: "Alt+8"
+    binding: "RControlKey+8"
   - command: "focus workspace 9"
-    binding: "Alt+9"
+    binding: "RControlKey+9"
   - command: "focus workspace 10"
-    binding: "Alt+0"
-
+    binding: "RControlKey+0"
 
   # Move focused workspace to a monitor in a given direction.
   - command: "move workspace left"
-    binding: "Alt+A"
+    binding: "RControlKey+A"
   - command: "move workspace right"
-    binding: "Alt+F"
+    binding: "RControlKey+F"
   - command: "move workspace up"
-    binding: "Alt+D"
+    binding: "RControlKey+D"
   - command: "move workspace down"
-    binding: "Alt+S"
+    binding: "RControlKey+S"
 
   # Move focused window to a workspace defined in `workspaces` config.
   - commands: ["move to workspace 1", "focus workspace 1"]
-    binding: "Alt+Shift+1"
+    binding: "RControlKey+Shift+1"
   - commands: ["move to workspace 2", "focus workspace 2"]
-    binding: "Alt+Shift+2"
+    binding: "RControlKey+Shift+2"
   - commands: ["move to workspace 3", "focus workspace 3"]
-    binding: "Alt+Shift+3"
+    binding: "RControlKey+Shift+3"
   - commands: ["move to workspace 4", "focus workspace 4"]
-    binding: "Alt+Shift+4"
+    binding: "RControlKey+Shift+4"
   - commands: ["move to workspace 5", "focus workspace 5"]
-    binding: "Alt+Shift+5"
+    binding: "RControlKey+Shift+5"
   - commands: ["move to workspace 6", "focus workspace 6"]
-    binding: "Alt+Shift+6"
+    binding: "RControlKey+Shift+6"
   - commands: ["move to workspace 7", "focus workspace 7"]
-    binding: "Alt+Shift+7"
+    binding: "RControlKey+Shift+7"
   - commands: ["move to workspace 8", "focus workspace 8"]
-    binding: "Alt+Shift+8"
+    binding: "RControlKey+Shift+8"
   - commands: ["move to workspace 9", "focus workspace 9"]
-    bindings: ["Alt+Shift+9"]
+    bindings: ["RControlKey+Shift+9"]
   - commands: ["move to workspace 10", "focus workspace 10"]
-    bindings: ["Alt+Shift+0"]
+    bindings: ["RControlKey+Shift+0"]
 
