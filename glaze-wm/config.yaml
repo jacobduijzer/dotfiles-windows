@@ -3,14 +3,14 @@ general:
   focus_follows_cursor: true
 
   # Whether to jump the cursor between windows focused by the WM.
-  cursor_follows_focus: true
+  cursor_follows_focus: false
 
   # Whether to switch back and forth between the previously focused workspace
   # when focusing the current workspace.
-  toggle_workspace_on_refocus: true
+  toggle_workspace_on_refocus: false
 
   # Whether to show floating windows as always on top.
-  show_floating_on_top: false
+  show_floating_on_top: true
 
   # Amount to move floating windows by (eg. when using `alt+<hjkl>` on a floating window)
   floating_window_move_amount: "5%"
@@ -108,6 +108,9 @@ window_rules:
   # Launches system dialogs as floating by default (eg. File Explorer save/open dialog).
   - command: "set floating"
     match_class_name: "#32770"
+
+  - commands: ["set floating", "resize height 500px", "resize width 500px" ]
+    match_process_name: "emacs"
 
   # Do not manage picture-in-picture windows for browsers. Note that the default is for
   # English; change `match_title` to the window's title if you use another language.
@@ -213,12 +216,12 @@ keybindings:
 
   # Launch CMD terminal (alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
   # to start RControlKeydows Terminal and Git Bash respectively.
-  - command: "exec cmd"
+  - command: "exec pwsh"
     binding: "RControlKey+Enter"
 
   # TODO: Find out if this is even possible with windows workspaces
-  - command: "exec C:/Users/Jacob/scoop/apps/vivaldi/current/Application/vivaldi.exe"
-    binding: "RControlKey+Shift+Enter"
+  #- command: "exec C:/Users/Jacob/scoop/apps/vivaldi/current/Application/vivaldi.exe"
+  #  binding: "RControlKey+Shift+Enter"
 
   # Focus the workspace that last had focus.
   - command: "focus workspace recent"
