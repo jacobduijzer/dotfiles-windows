@@ -20,6 +20,7 @@ $apps = @(
 	"glzr-io.glazewm"
 	"GNU.Emacs"
 	"Microsoft.PowerShell"
+	"Microsoft.Teams"
 	"Neovim.Neovim"
 	"Spotify.Spotify"
 	"Vivaldi.Vivaldi"
