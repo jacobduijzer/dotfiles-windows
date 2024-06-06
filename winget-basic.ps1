@@ -4,7 +4,7 @@
 ### Here can you add apps that you want to configure during installation ###
 # just add the app id from winget
 $graphical = @(
-    "ClamWin.ClamWin"
+	"ClamWin.ClamWin"
 );
 
 ### These apps are installed silently for all users ###
@@ -12,10 +12,14 @@ $graphical = @(
 
 $apps = @(
 	"AutoHotkey.AutoHotkey"
+	"Bitwarden.Bitwarden"
+	"Bitwarden.CLI"
 	"DEVCOM.JetBrainsMonoNerdFont"
+	"Flameshot.Flameshot"
 	"JetBrains.Rider"
 	"glzr-io.glazewm"
 	"GNU.Emacs"
+	"Microsoft.PowerShell"
 	"Neovim.Neovim"
 	"Spotify.Spotify"
 	"Vivaldi.Vivaldi"
