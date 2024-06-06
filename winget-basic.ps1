@@ -11,8 +11,10 @@ $graphical = @(
 # for msstore apps you need to specify the source like below
 
 $apps = @(
+	"AutoHotkey.AutoHotkey"
 	"DEVCOM.JetBrainsMonoNerdFont"
 	"JetBrains.Rider"
+	"glzr-io.glazewm"
 	"GNU.Emacs"
 	"Neovim.Neovim"
 	"Spotify.Spotify"
