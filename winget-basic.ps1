@@ -28,7 +28,7 @@ $apps = @(
 	"Microsoft.PowerShell"
 	"Microsoft.Teams"
 	"Neovim.Neovim"
-	"OpenJS.NodeJS"
+	"OpenJS.NodeJS.LTS"
 	"Spotify.Spotify"
 	"Vivaldi.Vivaldi"
 	"XP8LFCZM790F6B"	# Visual Studio Code Insiders"
