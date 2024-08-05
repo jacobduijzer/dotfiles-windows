@@ -25,6 +25,7 @@ $apps = @(
 	"Hugo.Hugo.Extended"
 	"Microsoft.AzureCLI"
 	"Microsoft.Office"
+  "Microsoft.OpenJDK.21"
 	"Microsoft.PowerShell"
 	"Microsoft.Teams"
 	"Neovim.Neovim"
